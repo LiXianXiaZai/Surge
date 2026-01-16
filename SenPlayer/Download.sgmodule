@@ -1,6 +1,6 @@
 #!name=SenPlayer 下载 Emby 服务器资源
 #!thanks=感谢开发者提供下载功能
-#!desc=使用 SenPlayer 下载 Emby 服务器资源。使用前请到 MitM 主机名中添加域名和端口
+#!desc=请到 MitM 主机名中添加域名和端口
 
 [Script]
 权限修改1 = type=http-response,pattern=(?i)\/emby\/Users\/\w{32}\/Items\/\d+,requires-body=true,max-size=0,script-path=https://raw.githubusercontent.com/LiXianXiaZai/Surge/main/SenPlayer/Download.js,debug=false
