@@ -12,7 +12,7 @@ if(/\/emby\/users/i.test(url)) {
 	$done({body: JSON.stringify(obj)});
 } else if(/(PlaybackInfo|Videos)/i.test(url)) {
     let headers = $request.headers;
-    headers['User-Agent'] = headers['User-Agent'].replace('_Download', '');
+    headers['user-agent'] = headers['user-agent'].replace('_Download', '');
     $done({headers: headers});
 } else {
     $done({});
